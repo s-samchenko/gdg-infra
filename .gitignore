@@ -48,6 +48,9 @@ __pycache__/
 mcp/build
 mcp/node_modules
 
+# idea
+.idea*
+
 
 .DS_Store
 

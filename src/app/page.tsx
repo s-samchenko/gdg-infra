@@ -3,12 +3,14 @@ import EventsSection from "@/components/sections/EventsSection";
 import HeroSection from "@/components/sections/HeroSection";
 import RecruitmentSection from "@/components/sections/RecruitmentSection";
 import StatisticsSection from "@/components/sections/StatisticsSection";
+import CarouselDemo from "@/components/sections/CarouselDemo";
 import { CardSkeleton } from "@/components/ui/loading-skeleton";
 import { Suspense } from "react";
 
 export default function Home() {
   return (
     <div className="min-h-screen gradient-bg">
+        <CarouselDemo />
       <HeroSection />
       {/* <StatisticsSection /> */}
       <AboutSection />
