@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@buildwithai/components/Navbar";
 import Footer from "@buildwithai/components/Footer";
-import Starfield from "@buildwithai/components/Starfield";
+import {StarfieldBackground} from "@/components/Starfieldbackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
-        <Starfield />
+        <StarfieldBackground />
         <Navbar />
         {children}
         <Footer />

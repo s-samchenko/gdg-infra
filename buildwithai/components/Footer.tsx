@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/10 bg-gradient-to-b from-black to-[#0a0a1f] overflow-hidden">
+    <footer className="relative border-t border-white/10 bg-gradient-to-b from-[#0a0a1f] via-purple-900/20 to-[#0a0a1f] overflow-hidden">
       {/* Ambient background effects */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl" />
@@ -37,7 +37,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-6">
             <a
-              href="https://developers.google.com/community/gdg"
+              href="https://gdg.community.dev/gdg-on-campus-university-of-toronto-scarborough-campus-toronto-canada/"
               target="_blank"
               rel="noreferrer"
               className="text-white/70 hover:text-white text-sm transition-colors"
@@ -45,7 +45,7 @@ export default function Footer() {
               About GDG
             </a>
             <a
-              href="mailto:gdg@utsc.utoronto.ca"
+              href="mailto:gdgutsc@gmail.com"
               className="text-white/70 hover:text-white text-sm transition-colors"
             >
               Contact Us
