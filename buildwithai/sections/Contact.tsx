@@ -33,8 +33,8 @@ export default function Contact() {
 			</form>
 			<p className="mt-6 text-white/60">
 				Or email us at{" "}
-				<a className="underline" href="mailto:gdg@utsc.utoronto.ca">
-					gdg@utsc.utoronto.ca
+				<a className="underline" href="mailto:gdgutsc@gmail.com">
+					gdgutsc@gmail.com
 				</a>
 			</p>
 		</Section>

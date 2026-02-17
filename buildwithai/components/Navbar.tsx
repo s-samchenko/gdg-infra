@@ -6,13 +6,11 @@ import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const navItems: Array<{ href: string; label: string }> = [
-  { href: "/", label: "Home" },
-  { href: "/agenda", label: "Agenda" },
-  { href: "/workshops", label: "Workshops" },
-  { href: "/#speakers", label: "Speakers" },
-  { href: "/#sponsors", label: "Sponsors" },
-  { href: "/#faq", label: "FAQ" },
-  { href: "/#contact", label: "Contact" },
+    { href: "/", label: "Home" },
+    { href: "/#about", label: "About" },
+    { href: "/#sponsors", label: "Sponsors" },
+    { href: "/#why-now", label: "Why Now" },
+    { href: "/#faq", label: "FAQ" },
 ];
 
 export function Navbar() {
@@ -116,7 +114,7 @@ export function Navbar() {
               whileTap={{ scale: 0.95 }}
             >
               <Link
-                href="/agenda"
+                href="https://lu.ma/cpkos17w"
                 className="rounded-full bg-white/90 text-black px-4 py-2 text-sm font-medium hover:bg-white transition-all hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
               >
                 Register

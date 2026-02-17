@@ -33,14 +33,27 @@ export function StarfieldBackground() {
             size: number;
             opacity: number;
             speed: number;
+            color: string;
 
             constructor() {
                 this.x = Math.random() * canvas.width - canvas.width / 2;
                 this.y = Math.random() * canvas.height - canvas.height / 2;
                 this.z = Math.random() * 1000;
-                this.size = Math.random() * 2;
+                this.size = Math.random() * 2.4;
                 this.opacity = Math.random();
-                this.speed = Math.random() * 0.5 + 0.1;
+                this.speed = Math.random() * 0.5 + 0.2;
+
+                // Color distribution: 60% white, 25% cyan, 10% purple, 5% pink
+                const rand = Math.random();
+                if (rand < 0.6) {
+                    this.color = '255, 255, 255'; // White
+                } else if (rand < 0.85) {
+                    this.color = '136, 204, 255'; // Light blue/cyan
+                } else if (rand < 0.95) {
+                    this.color = '192, 132, 252'; // Soft purple
+                } else {
+                    this.color = '249, 168, 212'; // Pink
+                }
             }
 
             update() {
@@ -59,7 +72,7 @@ export function StarfieldBackground() {
                 const y = (this.y / this.z) * 500 + canvas.height / 2;
                 const size = (1 - this.z / 1000) * this.size * 2;
 
-                ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity * (1 - this.z / 1000)})`;
+                ctx.fillStyle = `rgba(${this.color}, ${this.opacity * (1 - this.z / 1000)})`;
                 ctx.beginPath();
                 ctx.arc(x, y, size, 0, Math.PI * 2);
                 ctx.fill();
@@ -68,7 +81,7 @@ export function StarfieldBackground() {
 
         // Create stars
         const stars: Star[] = [];
-        const numStars = 200;
+        const numStars = 500;
         for (let i = 0; i < numStars; i++) {
             stars.push(new Star());
         }

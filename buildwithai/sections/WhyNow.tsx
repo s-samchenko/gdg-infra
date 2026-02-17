@@ -23,20 +23,20 @@ export default function WhyNow() {
     {
       icon: Users,
       stat: '3X more demand',
-      description: 'Than talent available, and in 2026, the global race for AI expertise has never been more competitive for employers',
+      description: 'Than talent available in 2026, making AI expertise highly competitive',
     },
   ];
 
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section className="relative py-20 pb-32 overflow-hidden" id="why-now">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a1f] via-purple-900/20 to-[#0a0a1f]" />
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Title */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-          Why Now?
-        </h2>
+        <h1 className="text-5xl md:text-7xl lg:text-6xl font-bold mb-4 text-center bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          WHY NOW?
+        </h1>
 
         {/* Opening statement */}
         <p className="text-2xl md:text-3xl text-center text-white font-semibold max-w-4xl mx-auto mb-16">
@@ -49,17 +49,17 @@ export default function WhyNow() {
         </p>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto items-stretch">
           {stats.map((item, index) => (
             <div
               key={index}
-              className="relative group"
+              className="relative group h-full"
             >
               {/* Glowing effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100" />
 
               {/* Card */}
-              <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300">
+              <div className="relative h-full bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300">
                 <div className="flex items-start gap-6">
                   {/* Icon */}
                   <div className="flex-shrink-0">

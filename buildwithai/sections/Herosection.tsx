@@ -33,11 +33,19 @@ export function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-b from-purple-900/10 via-black/50 to-black pointer-events-none" />
 
                 {/* Content */}
-                <div className="relative z-10 container mx-auto px-4">
-                    {/* Main Title */}
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 text-center bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
-                        Build with AI
-                    </h1>
+                <div className="relative z-10 container mx-auto px-4 pt-20">
+                    {/* Main Title with Backlight */}
+                    <div className="relative mb-4 flex justify-center">
+                        {/* Backlight glow - constrained around text */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[80%] h-32 md:h-40 blur-[80px] md:blur-[120px] opacity-70">
+                            <div className="w-full h-full bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500"></div>
+                        </div>
+
+                        {/* Title */}
+                        <h1 className="relative text-5xl md:text-7xl lg:text-8xl font-bold text-center bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
+                            Build with AI
+                        </h1>
+                    </div>
 
                     {/* Subtitle */}
                     <p className="text-xl md:text-2xl text-center text-gray-400 mb-16 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-100">                         Biggest AI Conference + Competition at UofT
@@ -109,7 +117,7 @@ export function HeroSection() {
 
                         {/* Right: Earth Image - Hidden on mobile, visible on desktop */}
                         <div className="hidden lg:flex items-center justify-center animate-in fade-in slide-in-from-right duration-1000 delay-300">
-                            <div className="relative w-full max-w-md aspect-square">
+                            <div className="relative w-full max-w-xl aspect-square">
                                 <Image
                                     src="/earth.png"
                                     alt="Earth at night"

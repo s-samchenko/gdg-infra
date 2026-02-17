@@ -51,7 +51,7 @@ export function StatsSection() {
     ];
 
     return (
-        <section className="relative py-20">
+        <section className="relative py-20" id="about">
             <div className="container mx-auto px-4">
                 {/* Title */}
                 <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
@@ -65,7 +65,7 @@ export function StatsSection() {
 
                 {/* Last Year Stats */}
                 <div className="mb-16">
-                    <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 text-white">
+                    <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
                         Last Year We Had
                     </h3>
                     <div className="grid grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -75,40 +75,39 @@ export function StatsSection() {
                     </div>
                 </div>
 
-                {/* Photos Section - Placeholder */}
+                {/* Photos Section */}
                 <div className="mb-16">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                        {/* Photo placeholders - replace /placeholder.jpg with your actual image paths */}
                         <div className="relative h-64 rounded-lg overflow-hidden bg-white/5 border border-white/10">
-                            <div className="flex items-center justify-center h-full text-gray-500">
-                                <div className="text-center">
-                                    <Users className="w-16 h-16 mx-auto mb-2 opacity-50" />
-                                    <p>Team Photo</p>
-                                </div>
-                            </div>
+                            <Image
+                                src="/BWAI-team.png"
+                                alt="Team Photo"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                         <div className="relative h-64 rounded-lg overflow-hidden bg-white/5 border border-white/10">
-                            <div className="flex items-center justify-center h-full text-gray-500">
-                                <div className="text-center">
-                                    <Users2 className="w-16 h-16 mx-auto mb-2 opacity-50" />
-                                    <p>Networking Photo</p>
-                                </div>
-                            </div>
+                            <Image
+                                src="/Networking.png"
+                                alt="Networking Photo"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                         <div className="relative h-64 rounded-lg overflow-hidden bg-white/5 border border-white/10">
-                            <div className="flex items-center justify-center h-full text-gray-500">
-                                <div className="text-center">
-                                    <Presentation className="w-16 h-16 mx-auto mb-2 opacity-50" />
-                                    <p>Event Photo</p>
-                                </div>
-                            </div>
+                            <Image
+                                src="/Workshops.png"
+                                alt="Event Photo"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                     </div>
                 </div>
 
                 {/* What to Expect This Year */}
                 <div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-center mb-12 text-white">
+                    <h3 className="text-2xl md:text-3xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
                         What to Expect This Year
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
