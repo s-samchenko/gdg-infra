@@ -36,8 +36,8 @@ export function StarfieldBackground() {
             color: string;
 
             constructor() {
-                this.x = Math.random() * canvas.width - canvas.width / 2;
-                this.y = Math.random() * canvas.height - canvas.height / 2;
+                this.x = Math.random() * canvas!.width - canvas!.width / 2;
+                this.y = Math.random() * canvas!.height - canvas!.height / 2;
                 this.z = Math.random() * 1000;
                 this.size = Math.random() * 2.4;
                 this.opacity = Math.random();
@@ -59,8 +59,8 @@ export function StarfieldBackground() {
             update() {
                 this.z -= this.speed;
                 if (this.z <= 0) {
-                    this.x = Math.random() * canvas.width - canvas.width / 2;
-                    this.y = Math.random() * canvas.height - canvas.height / 2;
+                    this.x = Math.random() * canvas!.width - canvas!.width / 2;
+                    this.y = Math.random() * canvas!.height - canvas!.height / 2;
                     this.z = 1000;
                 }
             }
@@ -68,8 +68,8 @@ export function StarfieldBackground() {
             draw() {
                 if (!ctx) return;
 
-                const x = (this.x / this.z) * 500 + canvas.width / 2;
-                const y = (this.y / this.z) * 500 + canvas.height / 2;
+                const x = (this.x / this.z) * 500 + canvas!.width / 2;
+                const y = (this.y / this.z) * 500 + canvas!.height / 2;
                 const size = (1 - this.z / 1000) * this.size * 2;
 
                 ctx.fillStyle = `rgba(${this.color}, ${this.opacity * (1 - this.z / 1000)})`;
@@ -89,8 +89,8 @@ export function StarfieldBackground() {
         // Animation loop
         let animationId: number;
         const animate = () => {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx!.fillStyle = 'rgba(0, 0, 0, 0.1)';
+            ctx!.fillRect(0, 0, canvas!.width, canvas!.height);
 
             stars.forEach(star => {
                 star.update();
