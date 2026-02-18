@@ -122,7 +122,7 @@ export default function FAQ() {
                     onClick={(e) => toggleFAQ(index, e)}
                 >
                   {/* Question Header - Fixed Height */}
-                  <div ref={(el) => (headerRefs.current[index] = el)} className="flex items-center justify-between p-6 min-h-[80px]">
+                  <div ref={(el) => { headerRefs.current[index] = el }} className="flex items-center justify-between p-6 min-h-[80px]">
                     <h3 className="text-white font-semibold text-lg pr-4">
                       {faq.q}
                     </h3>
@@ -139,7 +139,7 @@ export default function FAQ() {
                           openItems.includes(index) ? 'max-h-96 transition-all duration-300' : 'max-h-0 transition-none'
                       }`}
                   >
-                    <div ref={(el) => (answerRefs.current[index] = el)} className="px-6 pb-6 pt-0 border-t border-white/10">
+                    <div ref={(el) => { answerRefs.current[index] = el }} className="px-6 pb-6 pt-0 border-t border-white/10">
                       <p className="text-gray-300 mt-4">
                         {faq.a}
                       </p>
