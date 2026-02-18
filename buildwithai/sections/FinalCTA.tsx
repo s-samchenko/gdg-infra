@@ -35,7 +35,7 @@ export default function FinalCTA() {
 
                     {/* Subtext */}
                     <p className="text-xl md:text-1.5xl text-gray-300 mb-12 leading-relaxed">
-                        Join 600+ innovators, curious minds, and future AI leaders at the biggest AI event at UofT.
+                        Apply for the chance to join 600 curious minds at Build With AI 2026. Take part in hands-on workshops, tech talks, and panel discussions led by AI professionals. Meet tech enthusiasts and industry leaders during our networking session, and be part of our AI community
                     </p>
 
                     {/* CTA Button */}

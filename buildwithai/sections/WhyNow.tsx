@@ -7,23 +7,23 @@ export default function WhyNow() {
   const stats = [
     {
       icon: TrendingUp,
-      stat: '67% YoY growth',
-      description: 'In the global demand for AI talent',
+      stat: '78% of organizations',
+      description: 'Use AI in at least one business function (McKinsey)',
     },
     {
       icon: DollarSign,
       stat: '$15 trillion',
-      description: 'Projected contribution to the global economy by 2030',
+      description: 'Projected contribution to the global economy by 2030 (PwC)',
     },
     {
       icon: Building2,
       stat: '50%+ of companies',
-      description: 'Worldwide are already integrating AI into their workflows',
+      description: 'Worldwide are already integrating AI into their workflows (McKinsey\'s 2024 Global Survey)',
     },
     {
       icon: Users,
       stat: '3X more demand',
-      description: 'Than talent available in 2026, making AI expertise highly competitive',
+      description: 'Than talent available in 2026, making AI expertise highly competitive (WEF)',
     },
   ];
 

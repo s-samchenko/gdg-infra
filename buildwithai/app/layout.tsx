@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Build With AI 2025 — GDG UTSC",
+  title: "Build With AI 2026 — GDG UTSC",
   description: "A space‑themed developer conference with keynotes, workshops, and a build competition.",
   metadataBase: new URL("https://buildwithai.local"),
   openGraph: {
-    title: "Build With AI 2025 — GDG UTSC",
+    title: "Build With AI 2026 — GDG UTSC",
     description:
       "A space‑themed developer conference with keynotes, workshops, and a build competition.",
     images: ["/globe.svg"],

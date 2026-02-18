@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
 
         <p className="text-sm text-muted-foreground">
-          © 2025 Google Developer Group @ UTSC, All rights reserved
+          © 2026 Google Developer Group @ UTSC, All rights reserved
         </p>
       </div>
     </footer>

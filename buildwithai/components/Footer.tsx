@@ -28,7 +28,7 @@ export default function Footer() {
               height={40}
             />
             <div>
-              <p className="text-white font-semibold">Build With AI 2025</p>
+              <p className="text-white font-semibold">Build With AI 2026</p>
               <p className="text-white/60 text-xs">
                 © {new Date().getFullYear()} Google Developer Group – UTSC
               </p>
@@ -45,7 +45,7 @@ export default function Footer() {
               About GDG
             </a>
             <a
-              href="mailto:gdgutsc@gmail.com"
+              href="mailto:gdg.utsc@gmail.com"
               className="text-white/70 hover:text-white text-sm transition-colors"
             >
               Contact Us

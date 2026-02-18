@@ -21,9 +21,9 @@ export function HeroSection() {
 
     const eventDetails = {
         date: 'March 28, 2026',
-        time: '9:00 AM - 5:00 PM EST',
+        time: '10:00 AM - 6:00 PM EST',
         location: 'University of Toronto Scarborough',
-        email: 'gdgutsc@gmail.com',
+        email: 'gdg.utsc@gmail.com',
     };
 
     return (
