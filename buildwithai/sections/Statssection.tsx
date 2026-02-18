@@ -78,29 +78,44 @@ export function StatsSection() {
                 {/* Photos Section */}
                 <div className="mb-16">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                        <div className="relative h-64 rounded-lg overflow-hidden bg-white/5 border border-white/10">
+                        <div className="relative h-64 rounded-lg overflow-hidden bg-white/5 border border-white/10 group">
                             <Image
                                 src="/BWAI-team.png"
                                 alt="Team Photo"
                                 fill
                                 className="object-cover"
                             />
+                            <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm border-t border-white/10 px-4 py-3">
+                                <h3 className="text-white font-semibold text-sm md:text-base">
+                                    BWAI Community &lt;&gt; GDG - UTSC
+                                </h3>
+                            </div>
                         </div>
-                        <div className="relative h-64 rounded-lg overflow-hidden bg-white/5 border border-white/10">
+                        <div className="relative h-64 rounded-lg overflow-hidden bg-white/5 border border-white/10 group">
                             <Image
                                 src="/Networking.png"
                                 alt="Networking Photo"
                                 fill
                                 className="object-cover"
                             />
+                            <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm border-t border-white/10 px-4 py-3">
+                                <h3 className="text-white font-semibold text-sm md:text-base">
+                                    Networking & Collaboration
+                                </h3>
+                            </div>
                         </div>
-                        <div className="relative h-64 rounded-lg overflow-hidden bg-white/5 border border-white/10">
+                        <div className="relative h-64 rounded-lg overflow-hidden bg-white/5 border border-white/10 group">
                             <Image
                                 src="/Workshops.png"
                                 alt="Event Photo"
                                 fill
                                 className="object-cover"
                             />
+                            <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm border-t border-white/10 px-4 py-3">
+                                <h3 className="text-white font-semibold text-sm md:text-base">
+                                    Workshops & Tech Talks
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>

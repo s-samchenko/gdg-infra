@@ -15,9 +15,9 @@ export default function SponsorCarousel() {
   return (
     <section className="py-20" id="sponsors">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+        <h3 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
           Past representatives
-        </h2>
+        </h3>
 
         <div className="max-w-6xl mx-auto overflow-hidden">
           <div className="relative">
@@ -43,7 +43,7 @@ export default function SponsorCarousel() {
               }
               @media (min-width: 768px) {
                 .scroll-container {
-                  animation: scrollDesktop 12s linear infinite;
+                  animation: scrollDesktop 30s linear infinite;
                 }
               }
             `}</style>
